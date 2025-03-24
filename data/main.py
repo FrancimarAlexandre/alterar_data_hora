@@ -3,7 +3,7 @@ from datetime import datetime
 import pytz
 import subprocess
 
-def get_ntp_time(timezone='America/Sao_Paulo'):
+def get_ntp_time(timezone):
     # Obter a hora UTC
     client = ntplib.NTPClient()
     response = client.request('pool.ntp.org')
